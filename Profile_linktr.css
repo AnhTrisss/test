@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--background-page-color);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+h1 h2 h3 {
+  font-weight: 500;
+  margin-top: 26px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--button-text-color);
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: solid #8c8212;
+}
+
+:root {
+  /*===============color=================*/
+  --background-page-color: #193f3f;
+  --text-color: #ffffff;
+  --background-button-color: #816b37;
+  --background-button-color-hover: #7cff01;
+  --button-text-color: #5ddcec;
+  /*============Font and typography==============*/
+  /* .5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+.container {
+  max-width: 100vw;
+  max-height: 80vw;
+}
+
+.grid {
+  display: grid;
+  gap: 1.9rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*===============IMG==================*/
+.img_container {
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*===============Banner=============*/
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_1280.jpg);
+  ba
+}
+
+.pp_container {
+  position: relative;
+}
+
+.pp {
+  height: 150px;
+  width: 150px;
+
+  border-radius: 100%;
+  margin: 0px;
+
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*==========Banner==========*/
+main {
+  margin-top: 10vh;
+  text-align: center;
+}
+
+/*==========Banner==========*/
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*==========Buttons==========*/
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  background-color: var(--background-button-color);
+  width: 60vw;
+  padding: 1rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.button a {
+  font-size: 1.4rem;
+}
+
+.button:hover {
+  background-color: var(--background-button-color-hover);
+  transform: scale(1.03);
+}
+
+/*==========ICON==========*/
+.icon>* {
+  margin: 10px;
+  color: var(--text-color);
+}
+
+.icon>*:hover {
+  color: var(--background-button-color-hover);
+}
